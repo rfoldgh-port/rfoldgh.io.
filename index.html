@@ -1,3 +1,21 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @Holmberg18
+ Sign out
+ Unwatch 1
+  Star 0
+  Fork 0 Holmberg18/Holmberg18.github.io
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
+Branch: master Find file Copy pathHolmberg18.github.io/index.html
+1c95005  a day ago
+ Jon Holmberg update profile image
+0 contributors
+RawBlameHistory
+497 lines (463 sloc)  24.7 KB
 <html lang="en"><head>
 
     <meta charset="utf-8">
@@ -13,6 +31,7 @@
 
     <!-- Theme CSS -->
     <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -89,32 +108,8 @@
                     <hr class="star-primary">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/ski-lift-app.png" class="img-responsive site-image" alt="Cabin">
-                    </a>
-                </div>
-                <div class="col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/lego-builder.png" class="img-responsive site-image" alt="Slice of cake">
-                    </a>
-                </div>
-
-
-
-
-            </div>
+          <img class="ski-lift-app-desktop-image" src="img\portfolio\ski-search-app-desktop.jpg"/>
+          <img class="ski-lift-app-iphone-image" src="img\portfolio\ski-iphone.png"/>
         </div>
     </section>
 
@@ -474,6 +469,18 @@
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+          var options = [
+            {selector: '.ski-lift-app-desktop-image', offset: 500, callback: function(el) {
+              Materialize.fadeInImage($(el));
+            } },
+            {selector: '.ski-lift-app-iphone-image', offset: 500, callback: function(el) {
+              Materialize.fadeInImage($(el));
+            } }
+          ];
+          Materialize.scrollFire(options);
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -494,3 +501,5 @@
 
 
 </body></html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help

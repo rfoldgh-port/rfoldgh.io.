@@ -514,8 +514,3 @@ fieldset[disabled] .btn-success.active {
 div#maincontent {
   outline: none;
 }
-
-img.img-responsive.site-image {
-    height: 275px;
-    width: 400px;
-}

@@ -1,0 +1,25 @@
+img.img-responsive.site-image {
+    height: 275px;
+    width: 400px;
+}
+
+
+img.img-responsive.profile-image {
+    border-radius: 50%;
+}
+
+
+img.ski-lift-app-desktop-image {
+    height: 800px;
+    opacity: 0;
+}
+
+img.ski-lift-app-iphone-image {
+    float: right;
+    z-index: 1000;
+    position: absolute;
+    left: 1300px;
+    top: 1300px;
+    height: 700px;
+    opacity:0;
+}

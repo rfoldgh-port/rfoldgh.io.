@@ -32,6 +32,9 @@ RawBlameHistory
     <!-- Theme CSS -->
     <link href="css/freelancer.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/scrollview.js"></script>
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -108,8 +111,11 @@ RawBlameHistory
                     <hr class="star-primary">
                 </div>
             </div>
-          <img class="ski-lift-app-desktop-image" src="img\portfolio\ski-search-app-desktop.jpg"/>
-          <img class="ski-lift-app-iphone-image" src="img\portfolio\ski-iphone.png"/>
+            <section class="ski-lift-app-desktop">
+              <div id="ski-lift-app-desktop-id" data-position="left" class="notViewed animBlock floatl">
+                <img class="ski-lift-app-desktop-image" src="img\portfolio\ski-search-app-photo-slide.png"/>
+              </div>
+            </section>
         </div>
     </section>
 
@@ -468,19 +474,9 @@ RawBlameHistory
     </div>
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+
     <script src="materialize/js/materialize.min.js"></script>
-    <script>
-          var options = [
-            {selector: '.ski-lift-app-desktop-image', offset: 500, callback: function(el) {
-              Materialize.fadeInImage($(el));
-            } },
-            {selector: '.ski-lift-app-iphone-image', offset: 500, callback: function(el) {
-              Materialize.fadeInImage($(el));
-            } }
-          ];
-          Materialize.scrollFire(options);
-    </script>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -491,6 +487,7 @@ RawBlameHistory
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>

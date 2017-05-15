@@ -1,46 +1,66 @@
-$(function() {
-  var $blocks = $('.animBlock.notViewed');
-  var $window = $(window);
+function onViewport(el, elClass, offset, callback) {
+  /*** Based on http://ejohn.org/blog/learning-from-twitter/ ***/
+  var didScroll = false;
+  var this_top;
+  var height;
+  var top;
 
-  $window.on('scroll', function(e){
-    $blocks.each(function(i,elem){
-      if($(this).hasClass('viewed')) 
-        return;
-        
-      isScrolledIntoView($(this));
-    });
+  if(!offset) { var offset = 0; }
+
+  $(window).scroll(function() {
+      didScroll = true;
   });
-});
-/* http://stackoverflow.com/a/488073/477958 */
-function isScrolledIntoView(elem) {
-  var docViewTop = $(window).scrollTop();
-  var docViewBottom = docViewTop + $(window).height();
-  var elemOffset = 0;
-  
-  if(elem.data('offset') != undefined) {
-    elemOffset = elem.data('offset');
-  }
-  var elemTop = $(elem).offset().top;
-  var elemBottom = elemTop + $(elem).height();
-  
-  if(elemOffset != 0) { // custom offset is updated based on scrolling direction
-    if(docViewTop - elemTop >= 0) {
-      // scrolling up from bottom
-      elemTop = $(elem).offset().top + elemOffset;
-    } else {
-      // scrolling down from top
-      elemBottom = elemTop + $(elem).height() - elemOffset
+
+  setInterval(function() {
+    if (didScroll) {
+      didScroll = false;
+      top = $(this).scrollTop();
+
+      $(el).each(function(i){
+        this_top = $(this).offset().top - offset;
+        height   = $(this).height();
+
+        // Scrolled within current section
+        if (top >= this_top && !$(this).hasClass(elClass)) {
+          $(this).addClass(elClass);
+
+          if (typeof callback == "function") callback(el);
+        }
+      });
     }
-  }
-  
-  if((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
-    // once an element is visible exchange the classes
-    $(elem).removeClass('notViewed').addClass('viewed');
-    
-    var animElemsLeft = $('.animBlock.notViewed').length;
-    if(animElemsLeft == 0){
-      // with no animated elements left debind the scroll event
-      $(window).off('scroll');
+  }, 100);
+}
+
+var inView1 = false;
+var inView2 = false;
+
+function animateLeft(element){
+  if(!inView1){
+    $(element).animate({
+      opacity: 1,
+      left:"+=200px",
+    }, 800);
+    inView1 = true;
     }
+}
+
+function animateRight(element){
+  if(!inView2){
+    $(element).animate({
+      opacity: 1,
+      right:"+=200px",
+    }, 800);
+    inView2 = true;
   }
 }
+
+
+
+
+onViewport("#portfolio", function() {
+   animateLeft("#ski-lift-app-desktop-id");
+});
+
+onViewport("#lego-builder-app-desktop-id", function() {
+   animateRight("#lego-builder-app-desktop-id");
+});

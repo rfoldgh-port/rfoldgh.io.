@@ -36,22 +36,47 @@ var inView2 = false;
 var inView3 = false;
 var inView4 = false;
 
-function animateLeft(element){
+function animateLeft(element, duration, distance){
+  let offset;
+  let delay;
+  if(duration){
+    delay = duration;
+  } else {
+    delay = 800;
+  }
+  if(distance){
+    offset = distance;
+  } else {
+   offset = 200;
+  }
 
     $(element).animate({
       opacity: 1,
-      left:"+=200px",
-    }, 800);
+      left:`+=${offset}px`,
+    }, delay);
 
     }
 
 
-function animateRight(element){
+function animateRight(element, duration, distance){
+  let offset;
+  let delay;
+
+  if(duration){
+    delay = duration;
+  } else {
+    delay = 800;
+  }
+  if(distance){
+    offset = distance;
+  } else {
+    offset = 200;
+  }
 
     $(element).animate({
       opacity: 1,
-      right:"+=200px",
-    }, 800);
+      right:`+=${offset}px`,
+    }, delay);
 
 
 }
@@ -61,7 +86,9 @@ function animateRight(element){
 
 onViewport("#ski-lift-app-desktop-id","active", 750, function() {
   if(!inView1){
-   animateLeft("#ski-lift-app-desktop-id");
+   animateLeft(".ski-lift-app-desktop-image");
+   animateLeft("#ski-lift-software", 3000,150);
+
  }
  inView1 = true;
 });
@@ -69,6 +96,8 @@ onViewport("#ski-lift-app-desktop-id","active", 750, function() {
 onViewport("#lego-builder-app-desktop-id","active", 750, function() {
   if(!inView2){
    animateRight("#lego-builder-app-desktop-id");
+   animateRight("#lego-builder-software",3000,100);
+
  }
  inView2 = true;
 });
@@ -76,6 +105,7 @@ onViewport("#lego-builder-app-desktop-id","active", 750, function() {
 onViewport("#fortessa-app-desktop-id","active", 750, function() {
   if(!inView3){
    animateLeft("#fortessa-app-desktop-id");
+   animateLeft("#fortessa-software", 3000,50);
  }
  inView3 = true;
 });
@@ -83,6 +113,7 @@ onViewport("#fortessa-app-desktop-id","active", 750, function() {
 onViewport("#pestman-app-desktop-id","active", 750, function() {
   if(!inView4){
    animateRight("#pestman-app-desktop-id");
+   animateRight("#pestman-software",3000,50);
  }
  inView4 = true;
 });

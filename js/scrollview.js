@@ -95,25 +95,25 @@ onViewport("#ski-lift-app-desktop-id","active", 750, function() {
 
 onViewport("#lego-builder-app-desktop-id","active", 750, function() {
   if(!inView2){
-   animateRight("#lego-builder-app-desktop-id");
-   animateRight("#lego-builder-software",3000,100);
+   animateRight(".lego-builder-desktop-image");
+   animateRight("#lego-builder-software",2000,200);
 
  }
  inView2 = true;
 });
 
-onViewport("#fortessa-app-desktop-id","active", 750, function() {
+onViewport(".fortessa-app-desktop-image","active", 750, function() {
   if(!inView3){
-   animateLeft("#fortessa-app-desktop-id");
-   animateLeft("#fortessa-software", 3000,50);
+   animateLeft(".fortessa-app-desktop-image");
+   animateLeft("#fortessa-software", 2000,300);
  }
  inView3 = true;
 });
 
-onViewport("#pestman-app-desktop-id","active", 750, function() {
+onViewport(".pestman-desktop-image","active", 750, function() {
   if(!inView4){
-   animateRight("#pestman-app-desktop-id");
-   animateRight("#pestman-software",3000,50);
+   animateRight(".pestman-desktop-image");
+   animateRight("#pestman-software",2000,200);
  }
  inView4 = true;
 });

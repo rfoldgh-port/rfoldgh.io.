@@ -8,6 +8,7 @@ p.ski-lift-app-description {
 
 div#fortessa-software {
     margin-right: 12em;
+    margin-top: -6em;
 }
 
 .software-logo {
@@ -62,4 +63,13 @@ p.lego-builder-app-description {
 
 img.fortessa-app-desktop-image.active {
     margin-left: -10em;
+}
+
+.fa-fw {
+    margin-top: .6em;
+}
+
+
+div#pestman-software {
+    margin-top: 3em;
 }

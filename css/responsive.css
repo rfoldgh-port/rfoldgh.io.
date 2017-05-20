@@ -10,6 +10,20 @@ img.ski-lift-app-desktop-image {
     margin-right:13em;
     margin-top: 5em;
 }
+img.lego-builder-desktop-image {
+    width:80%;
+    height:150px;
+    padding:0 .5em;
+    margin-right:13em;
+    margin-top: 5em;
+}
+img.fortessa-app-desktop-image {
+    width:80%;
+    height:150px;
+    padding:0 .5em;
+    margin-right: -11em;
+    margin-top: -1em;
+}
 
 .ski-lift-app-div {
     height: 350px;
@@ -21,6 +35,11 @@ div#ski-lift-software {
     display: inline-block;
     margin-right: 4em;
     margin-top: -1.5em;
+}
+div#lego-builder-software {
+    display: inline-block;
+    margin-right: 1em;
+    margin-top: -14.5em;
 }
 
 img.software-logo {
@@ -36,6 +55,16 @@ p.ski-lift-app-description {
     width:60%;
     margin-left: 1.5em;
     margin-bottom: 2em;
+}
+
+p.lego-builder-app-description {
+     font-size: 15px;
+    margin: 0;
+    float: none;
+    width:60%;
+    margin-left: 1.5em;
+    margin-bottom: 2em;
+    margin-top:6em
 }
 
 h5#ski-search-title {margin-right: 6em;}

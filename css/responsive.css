@@ -1,0 +1,11 @@
+@media(min-width:320px){
+    body#page-top {
+    width: 108%;
+}
+
+img.ski-lift-app-desktop-image {
+    height:200px;
+    margin-right:13em
+}
+
+}

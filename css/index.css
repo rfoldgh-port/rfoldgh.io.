@@ -42,10 +42,13 @@ img.ski-lift-app-iphone-image {
 .ski-lift-app-div {
     display: inline-block;
     width: 112%;
+    text-align: center;
 }
 
 section#ski-lift-app-desktop-id {
     width: 120%;
+    display: block;
+    text-align: center;
 }
 
 p.lego-builder-app-description {

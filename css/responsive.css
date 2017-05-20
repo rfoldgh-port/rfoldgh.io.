@@ -8,14 +8,19 @@ img.ski-lift-app-desktop-image {
     height:150px;
     padding:0 .5em;
     margin-right:13em;
+    margin-top: 5em;
 }
 
 .ski-lift-app-div {
-    height: 200px;
+    height: 350px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
 }
 div#ski-lift-software {
     display: inline-block;
-    margin-right:4.5em
+    margin-right: 4em;
+    margin-top: -1.5em;
 }
 
 img.software-logo {
@@ -25,11 +30,12 @@ img.software-logo {
 }
 
 p.ski-lift-app-description {
-    font-size: 10px;
+    font-size: 15px;
     margin: 0;
     float: none;
     width:60%;
-    margin-left: 2em;
+    margin-left: 1.5em;
     margin-bottom: 2em;
 }
-}
+
+h5#ski-search-title {margin-right: 6em;}

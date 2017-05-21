@@ -14,29 +14,24 @@ img.lego-builder-desktop-image {
   width:80%;
   height:150px;
   padding:0 .5em;
-  margin-right:13em;
+  margin-right: -22em;
   margin-top: 0em;
 }
 img.fortessa-app-desktop-image {
-  width:80%;
+  width: 90%;
   height:150px;
   padding:0 .5em;
-  margin-right: -11em;
+  margin-right: 5em;
   margin-top: -1em;
+  margin-left: -28em;
 }
-img.fortessa-app-desktop-image {
-  width:80%;
-  height:150px;
-  padding:0 .5em;
-  margin-right: -5em;
-  margin-top: -1em;
-}
+
 
 img.pestman-desktop-image.active {
    width:80%;
    height:150px;
    padding:0 .5em;
-   margin-right: 6em;
+   margin-right: -22em;
    margin-top: -1em;
    margin-bottom: 14em;
 }
@@ -213,14 +208,14 @@ p.ski-lift-app-description {
 
 img.lego-builder-desktop-image {
   width: 71%;
-  margin-right: 11.5em;
+  margin-right: -19.5em;
  }
 
  img.fortessa-app-desktop-image {
   width: 73%;
   height: 230px;
   padding: 0 .5em;
-  margin-right: -1em;
+  margin-right: 8em;
   margin-top: -1em;
 }
 
@@ -228,7 +223,7 @@ img.lego-builder-desktop-image {
 img.pestman-desktop-image.active {
   width: 64%;
   height: 200px;
-  margin-right: 10em;
+  margin-right: -19em;
 }
 }
 
@@ -257,7 +252,7 @@ p.ski-lift-app-description {
 
 img.lego-builder-desktop-image {
   width: 71%;
-  margin-right: 17.5em;
+  margin-right: -10.5em;
   height: 300px;
  }
 
@@ -265,7 +260,7 @@ img.lego-builder-desktop-image {
   width: 73%;
   height: 350px;
   padding: 0 .5em;
-  margin-right: 5em;
+  margin-right: 17em;
   margin-top: -1em;
 }
 
@@ -273,7 +268,7 @@ img.lego-builder-desktop-image {
 img.pestman-desktop-image.active {
   width: 64%;
   height: 350px;
-  margin-right: 18em;
+  margin-right: -10em;
 }
 
 
@@ -332,7 +327,7 @@ p.lego-builder-app-description {
 
 img.lego-builder-desktop-image {
   width: 71%;
-  margin-right: 17.5em;
+  margin-right: -9.5em;
   height: 525px;
 }
 
@@ -375,7 +370,7 @@ div#fortessa-software {
 
 img.pestman-desktop-image.active {
   height: 525px;
-  margin-right: 20em;
+  margin-right: -10em;
 }
 }
 
@@ -401,7 +396,7 @@ div#ski-lift-software {
 
 img.lego-builder-desktop-image {
     width: 71%;
-    margin-right: 27.5em;
+    margin-right: -3.5em;
     height: 550px;
 }
 
@@ -431,7 +426,7 @@ div#fortessa-software {
 
 img.pestman-desktop-image.active {
     height: 550px;
-    margin-right: 26em;
+    margin-right: -2em;
 }
 
 div#pestman-software {

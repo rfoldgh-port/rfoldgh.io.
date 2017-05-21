@@ -378,3 +378,64 @@ img.pestman-desktop-image.active {
   margin-right: 20em;
 }
 }
+
+@media(min-width:1440px){
+  h5#ski-search-title {
+    margin-right: 14em;
+    font-size: 2em;
+}
+
+
+img.ski-lift-app-desktop-image {
+    width: 71%;
+    margin-right: 32em;
+    height: 550px;
+}
+
+
+div#ski-lift-software {
+    margin-right: 21em;
+    margin-top: 25em;
+}
+
+
+img.lego-builder-desktop-image {
+    width: 71%;
+    margin-right: 27.5em;
+    height: 550px;
+}
+
+
+h5.shop-fortessa-title {
+    font-size: 2em;
+    margin-left: 4em;
+}
+
+img.fortessa-app-desktop-image {
+    height: 550px;
+    margin-right: 17em;
+}
+
+
+div#fortessa-software {
+    margin-right: 25em;
+    margin-top: 32em;
+}
+
+
+.pestman-title {
+    margin-top: -3em;
+    margin-right: 12.5em;
+    font-size: 2em;
+}
+
+img.pestman-desktop-image.active {
+    height: 550px;
+    margin-right: 26em;
+}
+
+div#pestman-software {
+    margin-top: -12em;
+    margin-right: 1.5em;
+}
+}

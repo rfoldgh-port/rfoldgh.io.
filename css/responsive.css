@@ -50,7 +50,7 @@ img.pestman-desktop-image.active {
 div#ski-lift-software {
     display: inline-block;
     margin-right: 4em;
-    margin-top: 6.5em;
+    margin-top: -5.5em;
 }
 div#lego-builder-software {
     display: inline-block;
@@ -84,3 +84,9 @@ p.lego-builder-app-description {
 }
 
 h5#ski-search-title {margin-right: 7em;margin-top: 5em;margin-bottom: 0em;}
+
+div#pestman-software {
+    margin-top: -12em;
+}
+
+}

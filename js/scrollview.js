@@ -93,7 +93,7 @@ onViewport("#ski-lift-app-desktop-id","active", 750, function() {
  inView1 = true;
 });
 
-onViewport("#lego-builder-app-desktop-id","active", 750, function() {
+onViewport(".lego-builder-desktop-image","active", 750, function() {
   if(!inView2){
    animateRight(".lego-builder-desktop-image");
    animateRight("#lego-builder-software",2000,200);

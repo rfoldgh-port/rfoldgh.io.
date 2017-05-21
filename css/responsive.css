@@ -188,3 +188,46 @@ h5#ski-search-title {
 }
 
 }
+
+@media(min-width:425px){
+    h5#ski-search-title {
+    margin-right: 10em;
+    margin-top: -2em;
+    margin-bottom: 0em;
+}
+
+img.ski-lift-app-desktop-image {width: 63%; margin-right: 16em;}
+
+div#ski-lift-software {
+    margin-right: 6em;
+}
+h5.shop-fortessa-title {
+    margin-right: 10.5em;
+    margin-top: -4em;
+}
+
+p.ski-lift-app-description {
+    margin-bottom: 2em;
+}
+
+
+img.lego-builder-desktop-image {
+    width: 71%;
+    margin-right: 11.5em;
+   }
+
+   img.fortessa-app-desktop-image {
+    width: 73%;
+    height: 230px;
+    padding: 0 .5em;
+    margin-right: -1em;
+    margin-top: -1em;
+}
+
+
+img.pestman-desktop-image.active {
+    width: 64%;
+    height: 200px;
+    margin-right: 10em;
+}
+}

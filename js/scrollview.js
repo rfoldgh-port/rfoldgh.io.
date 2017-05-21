@@ -105,7 +105,7 @@ onViewport(".lego-builder-desktop-image","active", 750, function() {
 onViewport(".fortessa-app-desktop-image","active", 750, function() {
   if(!inView3){
    animateLeft(".fortessa-app-desktop-image");
-   animateLeft("#fortessa-software", 2000,300);
+   animateLeft("#fortessa-software", 2000,200);
  }
  inView3 = true;
 });

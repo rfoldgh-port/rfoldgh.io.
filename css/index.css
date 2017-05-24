@@ -17,8 +17,9 @@ div#fortessa-software {
 }
 
 .software-logo {
-    max-height: 100px;
-    margin: 0 2em;
+    margin: 0 20px 0 0;
+    height: auto;
+    width: 35px;
 }
 
 img.img-responsive.site-image {

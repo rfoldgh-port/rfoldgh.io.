@@ -84,9 +84,21 @@ function onViewport(el, elClass, offset, callback) {
 
 
 
-onViewport("#ski-lift-app-desktop-id","active", 750, function() {
-   $(".ski-lift-app-desktop-image").addClass('animate');
+onViewport(".ski-lift-app-div img","active", 750, function() {
+   $(".ski-lift-app-div img").addClass('animate');
 });
+
+onViewport(".lego-builder-app-div img","active", 750, function() {
+   $(".lego-builder-app-div img").addClass('animate');
+});
+
+onViewport(".fortessa-tableware-app-div img","active", 750, function() {
+   $(".fortessa-tableware-app-div img").addClass('animate');
+})
+
+onViewport(".pestman-supply-div img","active", 750, function() {
+   $(".pestman-supply-div img").addClass('animate');
+})
 
 // onViewport(".lego-builder-desktop-image","active", 750, function() {
 //   if(!inView2){

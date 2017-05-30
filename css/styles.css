@@ -1,3 +1,25 @@
+/*
+
+.ski-lift-app-desktop-image{
+  opacity:0;
+}*/
+
+#scroll {
+  text-align: center;
+}
+.animate {
+  opacity: 1;
+  transition: 2s ease-in-out;
+  -moz-transition: 2s ease-in-out;
+  -webkit-transition: 2s ease-in-out;
+}
+
+#desktop.animate{
+  transform: translate(5em,0);
+  -moz-transform: translate(5em,0);
+  -webkit-transform:translate(5em,0);
+}
+
 .profile-image img {
     max-height: 420px;
     width: auto;
@@ -54,3 +76,10 @@ body h1,h2,h3,h4,h5, p, form{
 .software {
     text-align:center;
 }
+
+
+/*@media only screen and (max-width: 767px){
+  #portfolio img {
+    max-width: 200px;
+}
+}*/

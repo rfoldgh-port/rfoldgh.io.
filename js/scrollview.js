@@ -31,89 +31,84 @@ function onViewport(el, elClass, offset, callback) {
   }, 100);
 }
 
-var inView1 = false;
-var inView2 = false;
-var inView3 = false;
-var inView4 = false;
+// var inView1 = false;
+// var inView2 = false;
+// var inView3 = false;
+// var inView4 = false;
+//
+// function animateLeft(element, duration, distance){
+//   let offset;
+//   let delay;
+//   if(duration){
+//     delay = duration;
+//   } else {
+//     delay = 800;
+//   }
+//   if(distance){
+//     offset = distance;
+//   } else {
+//    offset = 200;
+//   }
+//
+//     $(element).animate({
+//       opacity: 1,
+//       left:`+=${offset}px`,
+//     }, delay);
+//
+//     }
 
-function animateLeft(element, duration, distance){
-  let offset;
-  let delay;
-  if(duration){
-    delay = duration;
-  } else {
-    delay = 800;
-  }
-  if(distance){
-    offset = distance;
-  } else {
-   offset = 200;
-  }
-
-    $(element).animate({
-      opacity: 1,
-      left:`+=${offset}px`,
-    }, delay);
-
-    }
-
-
-function animateRight(element, duration, distance){
-  let offset;
-  let delay;
-
-  if(duration){
-    delay = duration;
-  } else {
-    delay = 800;
-  }
-  if(distance){
-    offset = distance;
-  } else {
-    offset = 200;
-  }
-
-    $(element).animate({
-      opacity: 1,
-      right:`+=${offset}px`,
-    }, delay);
-
-
-}
+//
+// function animateRight(element, duration, distance){
+//   let offset;
+//   let delay;
+//
+//   if(duration){
+//     delay = duration;
+//   } else {
+//     delay = 800;
+//   }
+//   if(distance){
+//     offset = distance;
+//   } else {
+//     offset = 200;
+//   }
+//
+//     $(element).animate({
+//       opacity: 1,
+//       right:`+=${offset}px`,
+//     }, delay);
+//
+//
+// }
 
 
 
 
 onViewport("#ski-lift-app-desktop-id","active", 750, function() {
-  if(!inView1){
-   animateLeft(".ski-lift-app-desktop-image");
-   animateLeft("#ski-lift-software", 3000,150);
-
- }
- inView1 = true;
+   $(".ski-lift-app-desktop-image").addClass('animate');
 });
 
-onViewport(".lego-builder-desktop-image","active", 750, function() {
-  if(!inView2){
-   animateRight(".lego-builder-desktop-image");
-   animateRight("#lego-builder-software",2000,200);
-
- }
- inView2 = true;
-});
-
-onViewport(".fortessa-app-desktop-image","active", 750, function() {
-  if(!inView3){
-   animateLeft(".fortessa-app-desktop-image");
-   animateLeft("#fortessa-software", 2000,200);
- }
- inView3 = true;
-});
-
-onViewport(".pestman-desktop-image","active", 750, function() {
-  if(!inView4){
-   animateRight(".pestman-desktop-image");
-   animateRight("#pestman-software",2000,200);
- }
- inView4 = true;
-});
+// onViewport(".lego-builder-desktop-image","active", 750, function() {
+//   if(!inView2){
+//    animateRight(".lego-builder-desktop-image");
+//    animateRight("#lego-builder-software",2000,200);
+//
+//  }
+//  inView2 = true;
+// });
+//
+// onViewport(".fortessa-app-desktop-image","active", 750, function() {
+//   if(!inView3){
+//    animateLeft(".fortessa-app-desktop-image");
+//    animateLeft("#fortessa-software", 2000,200);
+//  }
+//  inView3 = true;
+// });
+//
+// onViewport(".pestman-desktop-image","active", 750, function() {
+//   if(!inView4){
+//    animateRight(".pestman-desktop-image");
+//    animateRight("#pestman-software",2000,200);
+//  }
+//  inView4 = true;
+// });

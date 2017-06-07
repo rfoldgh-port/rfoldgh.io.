@@ -4,7 +4,7 @@
   opacity:0;
   position:relative;
   right:5em;
-  
+
 }
 
 #scroll {
@@ -28,6 +28,7 @@
     width: auto;
     display:block;
     margin:auto;
+    border-radius:100%;
 }
 
 html {

@@ -28,7 +28,7 @@ i.fa.fa-fw.fa-github.portfolio-icon {
 
 .profile-image img {
     max-height: 300px;
-    width: 300px;
+    width: 350px;
     display:block;
     margin:auto;
     border-radius:100%;
@@ -49,7 +49,7 @@ html, body {
 }
 
 #portfolio img {
-    max-width: 1000px;
+    max-width: 600px;
     display: block;
     margin: 0 auto;
 }
